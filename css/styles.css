@@ -32,9 +32,8 @@ img {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1000px;
+  padding: 0;
   margin-left: auto;
   margin-right: auto;
 }
@@ -42,4 +41,37 @@ img {
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
+}
+
+.sitenav {
+  padding-top: 30px;
+}
+
+.sitenav-img {
+  width: 35px;
+  height: 41px;
+}
+
+.sitenav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 39px;
+  list-style-type: none;
+}
+
+.sitenav-list-item {
+  margin-right: 30px;
+
+}
+
+.sitenav-item-link {}
+
+.site-hero {
+}
+
+.site-hero-info-wrapper {
+}
+
+.button {
 }
