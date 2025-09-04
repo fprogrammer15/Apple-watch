@@ -39,39 +39,184 @@ img {
 }
 
 /* MAIN-CONTENT */
-.main-content {
+/* .main-content {
   flex-grow: 1;
-}
+} */
 
+
+/* NAVIGATION */
 .sitenav {
   padding-top: 30px;
+  margin-bottom: 79px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.sitenav-img {
+.sitenav-logo {
   width: 35px;
   height: 41px;
+  margin-right: 480px;
 }
 
 .sitenav-list {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  padding: 0;
   margin-top: 39px;
+  margin-bottom: 10px;
   list-style-type: none;
 }
 
-.sitenav-list-item {
+.sitenav-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.sitenav-link {
+  text-decoration: none;
+  color: #333333;
+  font-size: 15px;
+  line-height: 22.5px;
+  font-weight: 400;
+}
+
+.sitenav-search-form {
+  display: inline-block;
+  margin-top: 33px;
+  margin-left: 72px;
+  border: none;
+}
+
+.sitenav-search-input {
+  line-height: 1.5;
+  border: none;
+  border-bottom: 1px solid black;
+  color: #757575;
+  padding: 8px 0; 
+}
+
+
+/* HERO-SECTION */
+.hero {
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
 
 }
 
-.sitenav-item-link {}
-
-.site-hero {
+.hero-title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 700;
 }
 
-.site-hero-info-wrapper {
+.hero-wrapper {
+  display: flex;
+  margin-right: 200px;
+  margin-bottom: 30px;
+}
+
+.hero-divider {
+  margin-right: 40px;
+  border: 3px solid #888888;
+}
+.hero-text {
+  display: inline-block;
+  width: 480px;
 }
 
 .button {
+  padding: 12px 35px;
+  background-color: #ea625c;
+  color: #fff;
+  border: 0;
+}
+
+.button-red {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.hero-img-wrapper {
+  align-self: flex-end;
+  width: 600px;
+  height: auto;
+  margin-right: -200px;
+}
+
+.hero-img {
+  width: 600px;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.hero-closing-divider {
+  margin: 0;
+  border: 1px solid #ddd;
+}
+
+
+/* MAIN-CONTENT */
+.main-content {
+}
+
+/* FEATURES-SECTION */
+.features {
+  display: flex;
+  align-items: center;
+}
+
+.fearures-item {
+  
+}
+
+.features-title {
+}
+
+.features-text {
+}
+
+.features-item {
+}
+
+.features-link {
+}
+
+/* NIKE-SPORT-BAND-SECTION */
+.nike-section {
+}
+.nike-content {
+}
+.nike-title {
+}
+.nike-divider {
+}
+.nike-text {
+}
+.button {
+}
+.button-red {
+}
+.nike-img-wrapper {
+}
+.nike-img {
+}
+
+/* CTA-SECTION */
+.cta-section {
+}
+.cta-content {
+}
+.cta-title {
+}
+.cta-text {
+}
+.button {
+}
+.button-red {
 }
