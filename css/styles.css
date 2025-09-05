@@ -300,10 +300,10 @@ img {
 
 /* CTA-SECTION */
 .cta-section {
-  max-width: 100%;
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
   height: 831px;
-  background-image: url(../images/bg-running-people.jpg);
+  background-image: url("../images/bg-running-people.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
