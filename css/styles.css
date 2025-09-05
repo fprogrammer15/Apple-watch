@@ -30,6 +30,14 @@ img {
 }
 
 /* CONTAINER */
+.large-container {
+  max-width: 1920px;
+  width: 100%;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .container {
   width: 100%;
   max-width: 1000px;
@@ -102,31 +110,45 @@ img {
   align-items: center;
 }
 
-.hero-content {
+.hero-content {}
 
-}
-
-.hero-title {
-  margin: 0;
-  margin-bottom: 30px;
+.title {
   font-size: 50px;
   line-height: 60px;
   font-weight: 700;
 }
 
-.hero-wrapper {
-  display: flex;
-  margin-right: 200px;
-  margin-bottom: 30px;
+.hero-title {
+  display: block;
+  margin: 0;
+  color: #000;
 }
 
-.hero-divider {
+.hero-wrapper {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 200px;
+}
+
+.divider {
   margin-right: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
   border: 3px solid #888888;
 }
+
+.text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
 .hero-text {
+  margin: 0;
   display: inline-block;
-  width: 480px;
+  width: 450px;
+  color: #777777;
 }
 
 .button {
@@ -142,6 +164,7 @@ img {
   font-weight: 700;
   text-transform: uppercase;
 }
+
 .hero-img-wrapper {
   align-self: flex-end;
   width: 600px;
@@ -162,61 +185,160 @@ img {
 
 
 /* MAIN-CONTENT */
-.main-content {
-}
+.main-content {}
 
 /* FEATURES-SECTION */
 .features {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 
-.fearures-item {
-  
+.features-item:not(:last-child) {
+  display: flex;
+  flex-direction: column;
+  min-width: 280px;
+  margin-top: 0;
+  margin-right: 80px;
 }
 
 .features-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 22.4px;
+  font-weight: 700;
+  color: #222;
+  text-transform: uppercase;
 }
 
 .features-text {
+  margin: 0;
+  width: 270px;
+  font-size: 14px;
+  line-height: 22.4px;
+  font-weight: 400;
+  color: #333;
 }
 
-.features-item {
+.indicator-dots{
+  display: flex;
+  gap: 8px;
+  margin-top: 20px; /* kvadratlar orasidagi masofa */
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #ddd; 
+  display: inline-block;  
+}
+
+.features-link-wrapper {
+  display: flex;
+  align-items:center;
+  margin-top: 30px;
+}
+
+.red-line {
+  display: inline-block;
+  align-self: center;
+  width: 40px;
+  height: 3px;
+  margin-right: 10px;
+  background-color: #ea625c;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: 2px;
 }
 
 .features-link {
+  font-size: 16px;
+  line-height: 25.6px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ea625c;
 }
 
 /* NIKE-SPORT-BAND-SECTION */
 .nike-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 70px 0;
 }
+
 .nike-content {
+  width: 450px;
 }
+
 .nike-title {
+  color: #000;
 }
-.nike-divider {
+
+.nike-info-wrapper {
+  display: flex;
+  margin-right: 80px;
+  margin-bottom: 30px;
 }
+
 .nike-text {
+  display: inline-block;
+  margin: 0;
+  color: #777777;
 }
-.button {
-}
-.button-red {
-}
+
 .nike-img-wrapper {
+  display: flex;
+  align-self:flex-end;
 }
 .nike-img {
+  width: auto;
+  height: auto;
 }
 
 /* CTA-SECTION */
 .cta-section {
+  max-width: 100%;
+  width: 1920px;
+  height: 831px;
+  background-image: url(../images/bg-running-people.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  margin-bottom: 118px;
 }
+
+.cta-position {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+
 .cta-content {
+  display: flex-end;
+  align-items:flex-end;
+  justify-content:right;
+  width: 490px;
 }
+
 .cta-title {
+  color: #fff;
 }
+
+.cta-info-wrapper {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.cta-divider {
+  border-color: #fff;
+}
+
 .cta-text {
-}
-.button {
-}
-.button-red {
+  color: #fff;
+  margin: 0;
 }
