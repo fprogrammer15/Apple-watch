@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-  <!-- Styles -->
+  <!-- STYLES -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -18,24 +18,24 @@
   
   <!-- SITE-HEADER -->
   <header class="site-header">
-    <div class="container">
+    <div class="site-header-container container">
+      <a class="site-header-logo" href="#">
+        <img class="site-header-logo-img" src="images/apple-logo.svg" alt="" width="35" height="42"> 
+      </a>
       
-      <!-- NAVIGATION -->
+      <!-- SITENAV -->
       <nav class="sitenav">
-        <a class="sitenav-logo-link" href="#">
-          <img class="sitenav-logo" src="images/apple-logo.svg" alt="Apple rasmi" width="35" height="41">
-        </a>
         <ul class="sitenav-list">
           <li class="sitenav-item"><a class="sitenav-link" href="#">Home</a></li>
           <li class="sitenav-item"><a class="sitenav-link" href="#">About</a></li>
           <li class="sitenav-item"><a class="sitenav-link" href="#">Offers</a></li>
           <li class="sitenav-item"><a class="sitenav-link" href="#">Services</a></li>
         </ul> 
-        
-        <form class="sitenav-search-form" action="#">
-          <input class="sitenav-search-input" type="search" placeholder="How can we help you?" aria-label="search">
-        </form>
       </nav>
+
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
+        <input class="search-form-input" type="search" name="search" placeholder="How can we help you?" aria-label="search" required>
+      </form>
       
       <!-- HERO-SECTION -->
       <div class="hero">
