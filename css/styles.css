@@ -1,6 +1,7 @@
 /* CUSTOM PROPS */
 :root {
   --primary: #ea625c;
+  --primary-dark: #c9514c;
   --text-color: #333;
 }
 
@@ -41,14 +42,6 @@ img {
 }
 
 /* CONTAINER */
-/* .large-container {
-  max-width: 1920px;
-  width: 100%;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-} */
-
 .container {
   width: 100%;
   max-width: 1100px;
@@ -57,6 +50,31 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
+
+/* BUTTON */
+.button {
+  display: inline-block;
+  padding: 12px 38px;
+  border: 0;
+  background-color: var(--primary);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {   
+  background-color: var(--primary-dark);
+}
+
+.button:active {
+  opacity: 0.6;
+}
+
 
 /* MAIN-CONTENT */
 .main-content {
@@ -80,11 +98,11 @@ img {
   transition: opacity 0.3s ease;
 }
 
-.site-header-logo {
+.site-header-logo:hover {
   opacity: 0.8;
 }
 
-.site-header-logo {
+.site-header-logo:active {
   opacity: 0.6;
 }
 
@@ -137,88 +155,54 @@ img {
 }
 
 
-/* HERO-SECTION */
+/* HERO */
 .hero {
-  display: flex;
-  align-items: center;
+  padding-top: 140px;
+  padding-bottom: 185px;
+  border-bottom: 2px solid #ddd;
+  background-image: url("../images/watch.jpg");
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 550px) bottom;
 }
 
-.hero-content {}
 
-.title {
+/* LEAD-CTA */
+.lead-cta {
+  width: 100%;
+  max-width: 490px;
+}
+
+.lead-cta-heading {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-size: 50px;
-  line-height: 60px;
-  font-weight: 700;
-}
-
-.hero-title {
-  display: block;
-  margin: 0;
+  line-height: 1.2;
   color: #000;
 }
 
-.hero-wrapper {
-  display: flex;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-right: 200px;
-}
-
-.divider {
-  margin-right: 40px;
+.lead-cta-text {
+  padding-left: 37px;
+  border-left: 3px solid #888;
   margin-top: 0;
-  margin-bottom: 0;
-  border: 3px solid #888888;
-}
-
-.text {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-}
-
-.hero-text {
-  margin: 0;
-  display: inline-block;
-  width: 450px;
-  color: #777777;
-}
-
-.button {
-  padding: 12px 35px;
-  background-color: #ea625c;
-  color: #fff;
-  border: 0;
-}
-
-.button-red {
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.hero-img-wrapper {
-  align-self: flex-end;
-  width: 600px;
-  height: auto;
-  margin-right: -200px;
-}
-
-.hero-img {
-  width: 600px;
-  height: auto;
-  vertical-align: bottom;
-}
-
-.hero-closing-divider {
-  margin: 0;
-  border: 1px solid #ddd;
+  margin-bottom: 30px;
+  color: #777;
 }
 
 
-/* MAIN-CONTENT */
-.main-content {}
+/* RETINA BG */
+@media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) { 
+  
+  /* Retina-specific stuff here */
+
+}
+
+
 
 /* FEATURES-SECTION */
 .features {
