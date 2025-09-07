@@ -35,6 +35,11 @@ img {
   height: auto;
 }
 
+*:focus {
+  outline: 2px dashed var(--primary);
+  outline-offset: 2px;
+}
+
 /* CONTAINER */
 /* .large-container {
   max-width: 1920px;
