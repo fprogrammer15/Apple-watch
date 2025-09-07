@@ -129,14 +129,7 @@ img {
 }
 
 /* SEARCH-FORM */
-.sitenav-search-form {
-  display: inline-block;
-  margin-top: 33px;
-  margin-left: 72px;
-  border: none;
-}
-
-.sitenav-search-input {
+.search-form-input {
   border: 0;
   padding-top: 6px;
   padding-bottom: 6px;
