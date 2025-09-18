@@ -55,11 +55,13 @@ img {
 /* BUTTON */
 .button {
   display: inline-block;
+  min-width: 260px;
   padding: 12px 38px;
   border: 0;
   background-color: var(--primary);
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
   font-size: 18px;
   line-height: 1.5;
   font-weight: 700;
@@ -203,12 +205,21 @@ img {
   color: #000;
 }
 
+.lead-cta-white .lead-cta-heading{
+  color: #fff;
+}
+
 .lead-cta-text {
   padding-left: 37px;
   border-left: 3px solid #888;
   margin-top: 0;
   margin-bottom: 30px;
   color: #777;
+}
+
+.lead-cta-white .lead-cta-text{
+  color: #fff;
+  border-color: #fff;
 }
 
 
@@ -261,6 +272,40 @@ img {
 }
 
 
+/* PROMO */
+.promo {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.promo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.promo-img {
+  width: 400px;
+  height: 600px;
+  object-fit: cover;
+}
+
+/* RUNNERS */
+
+.runners {
+  padding-top: 240px;
+  padding-bottom: 240px;
+  background-image: url("../images/bg-running-people.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.runners-lead-cta {
+  margin-left: auto;
+}
+
 
 
 
@@ -275,162 +320,4 @@ img {
   
   /* Retina-specific stuff here */
 
-}
-
-
-
-/* FEATURES */
-.features {
-  display: flex;
-  align-items: flex-start;
-  margin-top: 70px;
-  margin-bottom: 70px;
-}
-
-.features-item:not(:last-child) {
-  display: flex;
-  flex-direction: column;
-  min-width: 280px;
-  margin-top: 0;
-  margin-right: 80px;
-}
-
-.features-title {
-  margin-top: 0;
-  margin-bottom: 30px;
-  font-size: 16px;
-  line-height: 22.4px;
-  font-weight: 700;
-  color: #222;
-  text-transform: uppercase;
-}
-
-.features-text {
-  margin: 0;
-  width: 270px;
-  font-size: 14px;
-  line-height: 22.4px;
-  font-weight: 400;
-  color: #333;
-}
-
-.indicator-dots{
-  display: flex;
-  gap: 8px;
-  margin-top: 20px; /* kvadratlar orasidagi masofa */
-}
-
-.dot {
-  width: 8px;
-  height: 8px;
-  background-color: #ddd; 
-  display: inline-block;  
-}
-
-.features-link-wrapper {
-  display: flex;
-  align-items:center;
-  margin-top: 30px;
-}
-
-.red-line {
-  display: inline-block;
-  align-self: center;
-  width: 40px;
-  height: 3px;
-  margin-right: 10px;
-  background-color: #ea625c;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  border: 2px;
-}
-
-.features-link {
-  font-size: 16px;
-  line-height: 25.6px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #ea625c;
-}
-
-/* NIKE-SPORT-BAND-SECTION */
-.nike-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 70px 0;
-}
-
-.nike-content {
-  width: 450px;
-}
-
-.nike-title {
-  color: #000;
-}
-
-.nike-info-wrapper {
-  display: flex;
-  margin-right: 80px;
-  margin-bottom: 30px;
-}
-
-.nike-text {
-  display: inline-block;
-  margin: 0;
-  color: #777777;
-}
-
-.nike-img-wrapper {
-  display: flex;
-  align-self:flex-end;
-}
-.nike-img {
-  width: auto;
-  height: auto;
-}
-
-/* CTA-SECTION */
-.cta-section {
-  width: 100%;
-  max-width: 1920px;
-  height: 831px;
-  background-image: url("../images/bg-running-people.jpg");
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: cover;
-  margin-bottom: 118px;
-}
-
-.cta-position {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  height: 100%;
-}
-
-.cta-content {
-  display: flex-end;
-  align-items:flex-end;
-  justify-content:right;
-  width: 490px;
-}
-
-.cta-title {
-  color: #fff;
-}
-
-.cta-info-wrapper {
-  display: flex;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.cta-divider {
-  border-color: #fff;
-}
-
-.cta-text {
-  color: #fff;
-  margin: 0;
 }
