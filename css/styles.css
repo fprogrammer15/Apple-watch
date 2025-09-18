@@ -75,6 +75,29 @@ img {
   opacity: 0.6;
 }
 
+.lined-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--primary);
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.lined-link::before {
+  width: 40px;
+  height: 3px;
+  margin-right: 10px;
+  background-color: var(--primary);
+  content: "";
+  transition: width 0.3s ease;
+}
+
+.lined-link:hover::before {
+  width: 60px;
+}
 
 /* MAIN-CONTENT */
 .main-content {
@@ -189,6 +212,58 @@ img {
 }
 
 
+/* FEATURES */
+.features {
+  margin: 0;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.features-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.features-item {
+  width: 280px;
+}
+
+.features-item:not(:last-child) {
+  margin-right: 80px;
+}
+
+.features-heading {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #222;
+  text-transform: uppercase;
+}
+
+.features-text {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.features-divider {
+  width: 8px;
+  height: 8px;
+  border: 0;
+  margin-left: 0;
+  background-color: #ddd;
+  box-shadow: 16px 0 0 0 #ddd, 32px 0 0 0 #ddd;
+}
+
+
+
+
+
 /* RETINA BG */
 @media
   only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -204,7 +279,7 @@ img {
 
 
 
-/* FEATURES-SECTION */
+/* FEATURES */
 .features {
   display: flex;
   align-items: flex-start;
